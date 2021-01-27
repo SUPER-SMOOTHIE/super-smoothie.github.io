@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>William Stephan</title>
+		<meta name="description" content="William Stephan" />
+		<meta name="keywords" content="CV" />
+		<link rel="stylesheet" href="style.css">
+		<script src="https://kit.fontawesome.com/ca48e96271.js" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<script src="https://unpkg.com/in-view@0.6.1/dist/in-view.min.js"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+			rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"></script>
+
+		<script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<a href="">William Stephan</a>
+				<ul>
+					<li><a onclick="l1()" id="link-home" href="#home">Accueil</a></li>
+					<li><a onclick="l2()" id="link-profil" href="#profil">Profil</a></li>
+					<li><a onclick="l3()" id="link-portfolio" href="#portfolio">Portfolio</a></li>
+					<li><a onclick="l4()" id="link-contact" href="#contact">Contact</a></li>
+					<div class="tab"></div>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section id="home" class="landing-page anchor">
+				<h1>Bonjour !</h1>
+				<h1 >Je m'appelle&nbsp;<strong data-tilt>William Stephan</strong>
+				</h1>
+			</section>
+			<section id="profil" class="anchor">
+				<h2>A Propos de moi</h2>
+				<article>
+					<figure>
+						<img src="https://static.zero.app/web/bundles/601f587d197d79088a64977621f5e3cb.jpg"
+							alt="Photo de William Stephan" title="William Stephan">
+					</figure>
+					<div>
+						<h3>William Stephan</h3>
+						<h4>Etudiant en informatique</h4>
+						<p>Consequat magna aute occaecat irure ea ut. Sunt nostrud exercitation minim velit quis
+							cupidatat incididunt nulla reprehenderit qui duis commodo. Consectetur occaecat qui
+							reprehenderit elit veniam non proident. Culpa in deserunt voluptate exercitation amet
+							nostrud do voluptate. Occaecat ad in aute quis aliqua elit. Aute fugiat occaecat dolor
+							cillum ullamco amet. Do eiusmod aute consequat amet tempor mollit officia ullamco
+							ullamco.Berçé
+						</p>
+						<a class="slideright" href="#">Télécharger mon CV</a>
+					</div>
+				</article>
+			</section>
+			<section id="portfolio" class="anchor"></section>
+			<section id="contact" class="anchor"></section>
+		</main>
+		<footer></footer>
+		<script>
+			const handleView = item => {
+				const linkEl = document.querySelector(`#link-${item}`);
+
+				let offsetHeight = .85 * (window.innerHeight)
+				inView.offset({
+					bottom: offsetHeight
+				});
+
+				inView(`#${item}`)
+					.on("enter", () => {
+						if (linkEl == document.querySelector("#link-home")) {
+							l1();
+						}
+						else if (linkEl == document.querySelector("#link-profil")) {
+							l2();
+						}
+						else {
+							l3();
+						}
+					})
+					.on("exit", el => linkEl.classList.remove('active'))
+			};
+
+			// Apply method on each DOM element 
+			["home", "profil", "portfolio", "contact"].forEach(handleView);
+			// NOTE: showAlert(); ou showAlert(param); NE fonctionne PAS ici.
+			// Il faut fournir une valeur de type function (nom de fonction déclaré ailleurs ou declaration en ligne de fonction).
+			function l1() {
+				document.querySelector(".tab").style.left = "10px";
+			}
+			function l2() {
+				document.querySelector(".tab").style.left = "130px";
+			}
+			function l3() {
+				document.querySelector(".tab").style.left = "250px";
+			}
+			function l4() {
+				document.querySelector(".tab").style.left = "370px";
+			}
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+
+		<script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
+	</body>
+
+</html>
