@@ -54,7 +54,7 @@ nav ul {
 
 nav ul a {
   margin: 10px 10px;
-  font-weight: 300;
+  font-weight: 400;
   width: 100px;
   display: inline-block;
   text-align: center;
@@ -93,20 +93,44 @@ section {
   min-height: 100vh;
 }
 
-/* ----- Offset des Anchors (car le menu est sticky) ------- */
-
-/*Offset de Home*/
-/*
-#home::before {
-  content: '';
-  display: block;
-  height: 80px;
-  margin-top: -80px;
-  visibility: hidden;
+.medias {
+  position: fixed;
+  left: 25px;
+  bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.medias a {
+  margin: 5px 0;
+  font-size: 25px;
+  transition: all ease-in-out .15s;
+}
+
+.medias a:visited {
+  color: #000;
+  
+}
+
+.medias .dribbble:hover {
+  color : #cf5300;
+}
+
+.medias .insta:hover {
+  color : #d62976;
+}
+
+.medias .in:hover {
+  color: #0a66c2;
+}
+
+
+/* ----- Offset des Anchors (car le menu est sticky) ------- */
+
 /*Offset de Portfolio*/
-/*
+
 #profil::before {
   content: '';
   display: block;
@@ -114,7 +138,7 @@ section {
   margin-top: -80px;
   visibility: hidden;
 }
-*/
+
 
 #home{
   display: flex;

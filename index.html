@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="style.css">
 		<script src="https://kit.fontawesome.com/ca48e96271.js" crossorigin="anonymous"></script>
 		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<script src="https://kit.fontawesome.com/ca48e96271.js" crossorigin="anonymous"></script>
 		<script src="https://unpkg.com/in-view@0.6.1/dist/in-view.min.js"></script>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
@@ -39,15 +40,16 @@
 		<main>
 			<section id="home" class="landing-page anchor">
 				<h1>Bonjour !</h1>
-				<h1 >Je m'appelle&nbsp;<strong data-tilt>William Stephan</strong>
+				<h1>Je m'appelle&nbsp;<strong data-tilt>William Stephan</strong>
 				</h1>
+
+				</div>
 			</section>
 			<section id="profil" class="anchor">
 				<h2>A Propos de moi</h2>
 				<article>
 					<figure>
-						<img src="images/pdp.jpg"
-							alt="Photo de William Stephan" title="William Stephan">
+						<img src="images/pdp.jpg" alt="Photo de William Stephan" title="William Stephan">
 					</figure>
 					<div>
 						<h3>William Stephan</h3>
@@ -67,6 +69,15 @@
 			<section id="contact" class="anchor"></section>
 		</main>
 		<footer></footer>
+		<aside>
+			<div class="medias">
+				<a target="_blank" href="https://dribbble.com/" class="dribbble"><i class="fa fa-dribbble"
+						aria-hidden="true"></i></a>
+				<a target="_blank" href="https://www.instagram.com/will.stph" class="insta" target="_blank"><i
+						class="fa fa-instagram" aria-hidden="true"></i></a>
+				<a target="_blank" href="#" class="in"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+			</div>
+		</aside>
 		<script>
 			const handleView = item => {
 				const linkEl = document.querySelector(`#link-${item}`);
@@ -84,17 +95,17 @@
 						else if (linkEl == document.querySelector("#link-profil")) {
 							l2();
 						}
-						else {
+						else if (linkEl == document.querySelector("#link-portfolio")) {
 							l3();
+						}
+						else {
+							l4();
 						}
 					})
 					.on("exit", el => linkEl.classList.remove('active'))
 			};
-
-			// Apply method on each DOM element 
 			["home", "profil", "portfolio", "contact"].forEach(handleView);
-			// NOTE: showAlert(); ou showAlert(param); NE fonctionne PAS ici.
-			// Il faut fournir une valeur de type function (nom de fonction déclaré ailleurs ou declaration en ligne de fonction).
+
 			function l1() {
 				document.querySelector(".tab").style.left = "10px";
 			}
@@ -107,6 +118,7 @@
 			function l4() {
 				document.querySelector(".tab").style.left = "370px";
 			}
+
 		</script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
 
