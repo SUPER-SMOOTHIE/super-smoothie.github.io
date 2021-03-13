@@ -1,128 +1,318 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 
-	<head>
-		<meta charset="utf-8" />
-		<title>William Stephan</title>
-		<meta name="description" content="William Stephan" />
-		<meta name="keywords" content="CV" />
-		<link rel="stylesheet" href="style.css">
-		<script src="https://kit.fontawesome.com/ca48e96271.js" crossorigin="anonymous"></script>
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<script src="https://kit.fontawesome.com/ca48e96271.js" crossorigin="anonymous"></script>
-		<script src="https://unpkg.com/in-view@0.6.1/dist/in-view.min.js"></script>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-			rel="stylesheet">
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-			crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-			crossorigin="anonymous"></script>
+<head>
+	<meta charset="utf-8" />
+	<title>William Stephan</title>
+	<meta name="description" content="Le site portfolio de William Stephan" />
+	<meta name="keywords" content="CV" />
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/ca48e96271.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<script src="https://kit.fontawesome.com/ca48e96271.js" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/in-view@0.6.1/dist/in-view.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+		rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
 
-		<script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
-	</head>
+	<script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
 
-	<body>
-		<header>
-			<nav>
-				<a href="">William Stephan</a>
-				<ul>
-					<li><a onclick="l1()" id="link-home" href="#home">Accueil</a></li>
-					<li><a onclick="l2()" id="link-profil" href="#profil">Profil</a></li>
-					<li><a onclick="l3()" id="link-portfolio" href="#portfolio">Portfolio</a></li>
-					<li><a onclick="l4()" id="link-contact" href="#contact">Contact</a></li>
-					<div class="tab"></div>
-				</ul>
-			</nav>
-		</header>
-		<main>
-			<section id="home" class="landing-page anchor">
-				<h1>Bonjour !</h1>
-				<h1>Je m'appelle&nbsp;<strong data-tilt>William Stephan</strong>
-				</h1>
+	<script src="waypoints/lib/noframework.waypoints.min.js"></script>
+	 <!-- Font Awesome JS -->
 
-				</div>
-			</section>
-			<section id="profil" class="anchor">
-				<h2>A Propos de moi</h2>
-				<article>
-					<figure>
-						<img src="images/pdp.jpg" alt="Photo de William Stephan" title="William Stephan">
-					</figure>
-					<div>
-						<h3>William Stephan</h3>
-						<h4>Etudiant en informatique</h4>
-						<p>Consequat magna aute occaecat irure ea ut. Sunt nostrud exercitation minim velit quis
-							cupidatat incididunt nulla reprehenderit qui duis commodo. Consectetur occaecat qui
-							reprehenderit elit veniam non proident. Culpa in deserunt voluptate exercitation amet
-							nostrud do voluptate. Occaecat ad in aute quis aliqua elit. Aute fugiat occaecat dolor
-							cillum ullamco amet. Do eiusmod aute consequat amet tempor mollit officia ullamco
-							ullamco.Berçé
-						</p>
-						<a class="slideright" href="#">Télécharger mon CV</a>
-					</div>
-				</article>
-			</section>
-			<section id="portfolio" class="anchor"></section>
-			<section id="contact" class="anchor"></section>
-		</main>
-		<footer></footer>
-		<aside>
-			<div class="medias">
-				<a target="_blank" href="https://dribbble.com/" class="dribbble"><i class="fa fa-dribbble"
-						aria-hidden="true"></i></a>
-				<a target="_blank" href="https://www.instagram.com/will.stph" class="insta" target="_blank"><i
-						class="fa fa-instagram" aria-hidden="true"></i></a>
-				<a target="_blank" href="#" class="in"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+	 <script src="https://kit.fontawesome.com/ca48e96271.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a href="">William Stephan</a>
+			<ul>
+				<li><a onclick="l1()" id="link-home" href="#home">Accueil</a></li>
+				<li><a onclick="l2()" id="link-profil" href="#profil">Profil</a></li>
+				<li><a onclick="l3()" id="link-portfolio" href="#portfolio">Portfolio</a></li>
+				<li><a onclick="l4()" id="link-contact" href="#contact">Contact</a></li>
+				<div class="tab"></div>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="home" class="landing-page anchor">
+			<svg class="elements element1" version="1.0" xmlns="http://www.w3.org/2000/svg" width="50px" height="50px"
+				viewBox="0 0 500.000000 500.000000" preserveAspectRatio="xMidYMid meet">
+
+				<g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+					<path fill="#ff2674" d="M1230 3769 c-674 -677 -1227 -1232 -1229 -1234 -2 -2 0 -30 4 -61 l7
+-57 1284 1284 c1390 1390 1303 1295 1199 1298 l-40 1 -1225 -1231z" />
+					<path fill="#ff2674" d="M2165 4973 c-24 -3 -230 -204 -1082 -1055 l-1052 -1052 -7 -63 c-3
+-35 -5 -66 -2 -68 2 -2 510 502 1128 1120 1117 1117 1125 1125 1085 1124 -22
+-1 -53 -4 -70 -6z" />
+					<path fill="#ff2674" d="M1377 3622 l-1357 -1357 1 -40 c3 -104 -103 -202 1428 1328 l1413
+1414 -38 6 c-22 4 -50 7 -64 7 -20 0 -300 -275 -1383 -1358z" />
+					<path fill="#ff2674" d="M1527 3471 l-1475 -1476 10 -35 c5 -19 11 -42 14 -50 3 -9 528 509
+1514 1495 831 831 1510 1513 1510 1516 0 4 -22 11 -49 16 l-49 10 -1475 -1476z" />
+					<path fill="#ff2674" d="M1835 4904 l-90 -25 -808 -807 c-445 -444 -813 -818 -818 -832 -13
+-32 -50 -164 -44 -159 11 11 1852 1849 1851 1848 0 0 -41 -12 -91 -25z" />
+					<path fill="#ff2674" d="M1676 3321 l-1559 -1559 13 -46 c7 -25 15 -46 19 -46 8 0 3181 3173
+3181 3182 0 7 -57 28 -79 28 -9 0 -718 -702 -1575 -1559z" />
+					<path fill="#ff2674" d="M1823 3178 l-1631 -1633 21 -48 22 -47 1658 1658 1658 1658 -46 22
+c-25 12 -47 22 -48 22 -1 0 -736 -735 -1634 -1632z" />
+					<path fill="#ff2674" d="M1335 4703 l-130 -67 -412 -409 c-407 -405 -412 -411 -472 -517 -125
+-219 -138 -230 528 435 342 341 621 621 621 622 0 5 -3 4 -135 -64z" />
+					<path fill="#ff2674" d="M1971 3026 l-1684 -1684 12 -31 c7 -17 19 -35 25 -40 9 -7 488 466
+1715 1693 l1704 1704 -41 21 c-23 12 -43 21 -44 21 -2 0 -761 -758 -1687
+-1684z" />
+					<path fill="#ff2674" d="M2121 2876 l-1723 -1723 16 -31 c9 -17 21 -34 27 -38 10 -6 3479
+3451 3479 3468 0 6 -62 48 -71 48 -2 0 -780 -776 -1728 -1724z" />
+					<path fill="#ff2674" d="M2272 2727 l-1752 -1752 29 -35 30 -35 1755 1755 c966 965 1755 1759
+1753 1764 -2 5 -17 20 -33 32 l-30 23 -1752 -1752z" />
+					<path fill="#ff2674" d="M2421 2586 l-1765 -1765 28 -36 c16 -20 30 -35 31 -33 11 9 3466
+3463 3498 3495 l37 39 -33 32 -32 32 -1764 -1764z" />
+					<path fill="#ff2674" d="M2566 2431 l-1768 -1768 32 -26 c17 -15 35 -27 38 -27 4 0 798 791
+1766 1759 1539 1539 1757 1761 1748 1777 -6 11 -19 27 -29 36 -18 17 -88 -52
+-1787 -1751z" />
+					<path fill="#ff2674" d="M2718 2284 l-1756 -1754 37 -29 37 -30 1747 1747 1746 1747 -27 36
+-28 37 -1756 -1754z" />
+					<path fill="#ff2674" d="M2862 2137 l-1733 -1733 41 -23 c23 -13 43 -21 45 -20 2 2 775 774
+1717 1714 l1715 1711 -27 42 -26 41 -1732 -1732z" />
+					<path fill="#ff2674" d="M3012 1987 l-1693 -1693 43 -22 43 -22 1673 1673 c919 919 1672 1674
+1672 1677 0 3 -10 22 -23 42 l-22 38 -1693 -1693z" />
+					<path fill="#ff2674" d="M3158 1833 l-1638 -1638 46 -19 46 -19 1614 1614 1614 1614 -16 43
+c-10 23 -20 42 -23 42 -3 0 -743 -737 -1643 -1637z" />
+					<path fill="#ff2674" d="M3305 1690 c-863 -863 -1567 -1571 -1565 -1573 3 -2 27 -10 53 -17
+l49 -13 1535 1535 1536 1536 -13 51 c-6 28 -15 51 -19 51 -3 0 -712 -706
+-1576 -1570z" />
+					<path fill="#ff2674" d="M3457 1542 l-1488 -1488 52 -12 c29 -7 53 -11 55 -10 2 2 653 653
+1448 1447 l1445 1445 -12 53 -12 53 -1488 -1488z" />
+					<path fill="#ff2674" d="M3606 1391 l-1379 -1379 58 -7 57 -8 1329 1329 1329 1329 -1 40 c0
+22 -4 48 -7 57 -6 14 -301 -276 -1386 -1361z" />
+					<path fill="#ff2674" d="M3755 1240 l-1240 -1240 65 0 65 0 1178 1178 1178 1178 -3 62 -3 62
+-1240 -1240z" />
+					<path fill="#ff2674" d="M3901 1096 l-1084 -1084 84 14 83 13 988 989 989 988 13 82 c7 45 13
+82 12 82 -1 0 -489 -488 -1085 -1084z" />
+					<path fill="#ff2674" d="M4050 945 l-855 -855 55 16 c153 45 97 -4 872 771 628 629 719 724
+736 768 20 50 53 155 49 155 -1 0 -387 -385 -857 -855z" />
+					<path fill="#ff2674" d="M4200 794 c-303 -303 -472 -479 -450 -469 52 26 245 160 325 226 101
+83 352 341 422 434 71 95 201 295 191 295 -2 0 -221 -219 -488 -486z" />
+				</g>
+			</svg>
+			<svg class="elements element2" width="50px" height="50px" viewBox="0 0 1280.000000 1280.000000">
+				<g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+					<path fill="#fee266" d="M6110 12794 c-341 -22 -566 -47 -810 -90 -981 -172 -1916 -573 -2710
+				-1162 -500 -371 -962 -833 -1332 -1332 -651 -879 -1075 -1937 -1207 -3015 -39
+				-313 -45 -428 -45 -795 0 -437 23 -720 90 -1100 330 -1878 1474 -3507 3127
+				-4454 804 -461 1650 -725 2627 -822 246 -25 854 -25 1100 0 977 97 1823 361
+				2627 822 1161 665 2087 1679 2643 2894 267 585 451 1230 529 1865 37 296 46
+				446 46 795 0 428 -25 725 -91 1100 -304 1732 -1299 3256 -2759 4227 -894 595
+				-1895 946 -2985 1048 -153 15 -724 27 -850 19z" />
+				</g>
+			</svg>
+			<svg class="elements element3" width="50px" height="50px" viewBox="0 0 1280.000000 1108.000000">
+				<g transform="translate(0.000000,1108.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+					<path fill="#ceeb7f" d="M5898 10213 c-1018 -1764 -3562 -6168 -4709 -8153 l-1186 -2055 3198
+-3 c1760 -1 4638 -1 6398 0 l3199 3 -1095 1895 c-1272 2204 -1409 2440 -3226
+5585 -753 1304 -1527 2643 -1720 2978 -193 334 -354 607 -357 607 -3 0 -229
+-386 -502 -857z" />
+				</g>
+			</svg>
+			<svg class="elements element4" version="1.0" xmlns="http://www.w3.org/2000/svg" width="50px" height="50px"
+				viewBox="0 0 1280.000000 1280.000000" preserveAspectRatio="xMidYMid meet">
+				<g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" stroke="none">
+					<path fill="#ff2674" d="M749 12047 c-19 -20 -19 -95 -19 -5658 0 -4139 3 -5640 11 -5645 6
+-4 2548 -7 5649 -7 4698 -1 5640 1 5654 12 15 12 16 471 16 5611 0 3078 -3
+5618 -6 5643 -6 43 -9 46 -43 52 -20 3 -2557 7 -5639 9 l-5603 4 -20 -21z
+m10517 -866 c-12 -39 -17 -1584 -20 -5415 -3 -3985 -4 -4140 -22 -4153 -15
+-11 -851 -13 -4850 -13 -2658 0 -4835 4 -4838 8 -8 13 -16 9439 -8 9512 l7 65
+1265 5 c696 3 2886 5 4868 6 3258 0 3602 -1 3598 -15z" />
+				</g>
+			</svg>
+			<svg class="elements element5" version="1.0" xmlns="http://www.w3.org/2000/svg" width="50px" height="50px"
+				viewBox="0 0 500.000000 500.000000" preserveAspectRatio="xMidYMid meet">
+
+				<g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+					<path fill="#79cdc3" d="M1230 3769 c-674 -677 -1227 -1232 -1229 -1234 -2 -2 0 -30 4 -61 l7
+-57 1284 1284 c1390 1390 1303 1295 1199 1298 l-40 1 -1225 -1231z" />
+					<path fill="#79cdc3" d="M2165 4973 c-24 -3 -230 -204 -1082 -1055 l-1052 -1052 -7 -63 c-3
+-35 -5 -66 -2 -68 2 -2 510 502 1128 1120 1117 1117 1125 1125 1085 1124 -22
+-1 -53 -4 -70 -6z" />
+					<path fill="#79cdc3" d="M1377 3622 l-1357 -1357 1 -40 c3 -104 -103 -202 1428 1328 l1413
+1414 -38 6 c-22 4 -50 7 -64 7 -20 0 -300 -275 -1383 -1358z" />
+					<path fill="#79cdc3" d="M1527 3471 l-1475 -1476 10 -35 c5 -19 11 -42 14 -50 3 -9 528 509
+1514 1495 831 831 1510 1513 1510 1516 0 4 -22 11 -49 16 l-49 10 -1475 -1476z" />
+					<path fill="#79cdc3" d="M1835 4904 l-90 -25 -808 -807 c-445 -444 -813 -818 -818 -832 -13
+-32 -50 -164 -44 -159 11 11 1852 1849 1851 1848 0 0 -41 -12 -91 -25z" />
+					<path fill="#79cdc3" d="M1676 3321 l-1559 -1559 13 -46 c7 -25 15 -46 19 -46 8 0 3181 3173
+3181 3182 0 7 -57 28 -79 28 -9 0 -718 -702 -1575 -1559z" />
+					<path fill="#79cdc3" d="M1823 3178 l-1631 -1633 21 -48 22 -47 1658 1658 1658 1658 -46 22
+c-25 12 -47 22 -48 22 -1 0 -736 -735 -1634 -1632z" />
+					<path fill="#79cdc3" d="M1335 4703 l-130 -67 -412 -409 c-407 -405 -412 -411 -472 -517 -125
+-219 -138 -230 528 435 342 341 621 621 621 622 0 5 -3 4 -135 -64z" />
+					<path fill="#79cdc3" d="M1971 3026 l-1684 -1684 12 -31 c7 -17 19 -35 25 -40 9 -7 488 466
+1715 1693 l1704 1704 -41 21 c-23 12 -43 21 -44 21 -2 0 -761 -758 -1687
+-1684z" />
+					<path fill="#79cdc3" d="M2121 2876 l-1723 -1723 16 -31 c9 -17 21 -34 27 -38 10 -6 3479
+3451 3479 3468 0 6 -62 48 -71 48 -2 0 -780 -776 -1728 -1724z" />
+					<path fill="#79cdc3" d="M2272 2727 l-1752 -1752 29 -35 30 -35 1755 1755 c966 965 1755 1759
+1753 1764 -2 5 -17 20 -33 32 l-30 23 -1752 -1752z" />
+					<path fill="#79cdc3" d="M2421 2586 l-1765 -1765 28 -36 c16 -20 30 -35 31 -33 11 9 3466
+3463 3498 3495 l37 39 -33 32 -32 32 -1764 -1764z" />
+					<path fill="#79cdc3" d="M2566 2431 l-1768 -1768 32 -26 c17 -15 35 -27 38 -27 4 0 798 791
+1766 1759 1539 1539 1757 1761 1748 1777 -6 11 -19 27 -29 36 -18 17 -88 -52
+-1787 -1751z" />
+					<path fill="#79cdc3" d="M2718 2284 l-1756 -1754 37 -29 37 -30 1747 1747 1746 1747 -27 36
+-28 37 -1756 -1754z" />
+					<path fill="#79cdc3" d="M2862 2137 l-1733 -1733 41 -23 c23 -13 43 -21 45 -20 2 2 775 774
+1717 1714 l1715 1711 -27 42 -26 41 -1732 -1732z" />
+					<path fill="#79cdc3" d="M3012 1987 l-1693 -1693 43 -22 43 -22 1673 1673 c919 919 1672 1674
+1672 1677 0 3 -10 22 -23 42 l-22 38 -1693 -1693z" />
+					<path fill="#79cdc3" d="M3158 1833 l-1638 -1638 46 -19 46 -19 1614 1614 1614 1614 -16 43
+c-10 23 -20 42 -23 42 -3 0 -743 -737 -1643 -1637z" />
+					<path fill="#79cdc3" d="M3305 1690 c-863 -863 -1567 -1571 -1565 -1573 3 -2 27 -10 53 -17
+l49 -13 1535 1535 1536 1536 -13 51 c-6 28 -15 51 -19 51 -3 0 -712 -706
+-1576 -1570z" />
+					<path fill="#79cdc3" d="M3457 1542 l-1488 -1488 52 -12 c29 -7 53 -11 55 -10 2 2 653 653
+1448 1447 l1445 1445 -12 53 -12 53 -1488 -1488z" />
+					<path fill="#79cdc3" d="M3606 1391 l-1379 -1379 58 -7 57 -8 1329 1329 1329 1329 -1 40 c0
+22 -4 48 -7 57 -6 14 -301 -276 -1386 -1361z" />
+					<path fill="#79cdc3" d="M3755 1240 l-1240 -1240 65 0 65 0 1178 1178 1178 1178 -3 62 -3 62
+-1240 -1240z" />
+					<path fill="#79cdc3" d="M3901 1096 l-1084 -1084 84 14 83 13 988 989 989 988 13 82 c7 45 13
+82 12 82 -1 0 -489 -488 -1085 -1084z" />
+					<path fill="#79cdc3" d="M4050 945 l-855 -855 55 16 c153 45 97 -4 872 771 628 629 719 724
+736 768 20 50 53 155 49 155 -1 0 -387 -385 -857 -855z" />
+					<path fill="#79cdc3" d="M4200 794 c-303 -303 -472 -479 -450 -469 52 26 245 160 325 226 101
+83 352 341 422 434 71 95 201 295 191 295 -2 0 -221 -219 -488 -486z" />
+				</g>
+			</svg>
+			<h1>Bienvenue !</h1>
+			<h1>Je suis&nbsp;<strong>William Stephan</strong>
+			</h1>
+			<p>Etudiant en Informatique</p>
+
 			</div>
-		</aside>
-		<script>
-			const handleView = item => {
-				const linkEl = document.querySelector(`#link-${item}`);
+		</section>
+		<section id="profil">
+			<h2>A Propos de moi</h2>
+			<article>
+				<figure>
+					<img src="images/pdp.jpg" alt="Photo de William Stephan" title="William Stephan">
+				</figure>
+				<div>
+					<h3>William Stephan</h3>
+					<h4>Etudiant en informatique</h4>
+					<p>Étudiant en informatique à IUT de Lannion et principalement passionné par le Web Design.
+						L'informatique reste un domaine qui m’intéresse et dans lequel je recherche une alternance pour
+						renforcer mes compétences.
+					</p>
+					<a class="slideright" href="#">Télécharger mon CV</a>
+				</div>
+			</article>
+		</section>
+		<section id="portfolio"></section>
+		<section id="contact"></section>
+	</main>
+	<footer>
+		<p>© William Stephan
+			Tous droits réservés.</p>
+	</footer>
+	<aside>
+		<div class="medias">
+			<a target="_blank" href="https://dribbble.com/" class="dribbble"><i class="fa fa-dribbble"
+					aria-hidden="true"></i></a>
+			<a target="_blank" href="https://www.instagram.com/will.stph" class="insta" target="_blank"><i
+					class="fa fa-instagram" aria-hidden="true"></i></a>
+			<a target="_blank" href="https://www.linkedin.com/in/william-stephan/" class="in"><i class="fa fa-linkedin"
+					aria-hidden="true"></i></a>
+		</div>
+		<a href="#" class="ToTheTop"><i class="fas text-white fa-chevron-up"></i></a>
+	</aside>
+	
+	<script>
+		/*const handleView = item => {
+			const linkEl = document.querySelector(`#link-${item}`);
 
-				let offsetHeight = .85 * (window.innerHeight)
-				inView.offset({
-					bottom: offsetHeight
-				});
+			let offsetHeight = .85 * (window.innerHeight)
+			inView.offset({
+				bottom: offsetHeight
+			});
 
-				inView(`#${item}`)
-					.on("enter", () => {
-						if (linkEl == document.querySelector("#link-home")) {
-							l1();
-						}
-						else if (linkEl == document.querySelector("#link-profil")) {
-							l2();
-						}
-						else if (linkEl == document.querySelector("#link-portfolio")) {
-							l3();
-						}
-						else {
-							l4();
-						}
-					})
-					.on("exit", el => linkEl.classList.remove('active'))
-			};
-			["home", "profil", "portfolio", "contact"].forEach(handleView);
-
-			function l1() {
+			inView(`#${item}`)
+				.on("enter", () => {
+					if (linkEl == document.querySelector("#link-home")) {
+						l1();
+					}
+					else if (linkEl == document.querySelector("#link-profil")) {
+						l2();
+					}
+					else if (linkEl == document.querySelector("#link-portfolio")) {
+						l3();
+					}
+					else {
+						l4();
+					}
+				})
+				.on("exit", el => linkEl.classList.remove('active'))
+		};
+		["home", "profil", "portfolio", "contact"].forEach(handleView);
+*/
+		var home = new Waypoint({
+			element: document.getElementById('home'),
+			handler: function () {
 				document.querySelector(".tab").style.left = "10px";
-			}
-			function l2() {
+				document.querySelector(".tab").style.background = "#79cdc3";
+			}, offset: -400
+		})
+		var profilStart = new Waypoint({
+			element: document.getElementById('profil'),
+			handler: function () {
 				document.querySelector(".tab").style.left = "130px";
-			}
-			function l3() {
+				document.querySelector(".tab").style.background = "#ceeb7f";
+			}, offset: 300
+		})
+		var profilEnd = new Waypoint({
+			element: document.getElementById('portfolio'),
+			handler: function () {
+				document.querySelector(".tab").style.left = "130px";
+				document.querySelector(".tab").style.background = "#ceeb7f";
+			}, offset: 150
+		})
+		var portfolioStart = new Waypoint({
+			element: document.getElementById('portfolio'),
+			handler: function () {
 				document.querySelector(".tab").style.left = "250px";
+				document.querySelector(".tab").style.background = "#fee266";
 			}
-			function l4() {
+		})
+		var portfolioEnd = new Waypoint({
+			element: document.getElementById('contact'),
+			handler: function () {
+				document.querySelector(".tab").style.left = "250px";
+				document.querySelector(".tab").style.background = "#fee266";
+			}, offset: 150
+		})
+		var contact = new Waypoint({
+			element: document.getElementById('contact'),
+			handler: function () {
 				document.querySelector(".tab").style.left = "370px";
-			}
+				document.querySelector(".tab").style.background = "#ff2674";
+			}, offset: 10
+		})
+		var buttonTop = document.querySelector(".ToTheTop");
+		window.onscroll = () => {
+			this.scrollY > 300 ? buttonTop.classList.add("showBtn") : buttonTop.classList.remove("showBtn");//faire apparaitre le button pour revenir en haut de page
+		}
 
-		</script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+	</script>
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
 
-		<script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
-	</body>
+	<script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>-->
+</body>
 
 </html>
