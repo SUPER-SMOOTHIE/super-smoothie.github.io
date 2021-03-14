@@ -25,9 +25,9 @@
 	<script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
 
 	<script src="waypoints/lib/noframework.waypoints.min.js"></script>
-	 <!-- Font Awesome JS -->
+	<!-- Font Awesome JS -->
 
-	 <script src="https://kit.fontawesome.com/ca48e96271.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/ca48e96271.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -35,17 +35,17 @@
 		<nav>
 			<a href="">William Stephan</a>
 			<ul>
-				<li><a onclick="l1()" id="link-home" href="#home">Accueil</a></li>
-				<li><a onclick="l2()" id="link-profil" href="#profil">Profil</a></li>
-				<li><a onclick="l3()" id="link-portfolio" href="#portfolio">Portfolio</a></li>
-				<li><a onclick="l4()" id="link-contact" href="#contact">Contact</a></li>
+				<li><a id="link-home" href="#home">Accueil</a></li>
+				<li><a id="link-profil" href="#profil">Profil</a></li>
+				<li><a id="link-portfolio" href="#portfolio">Portfolio</a></li>
+				<li><a id="link-contact" href="#contact">Contact</a></li>
 				<div class="tab"></div>
 			</ul>
 		</nav>
 	</header>
 	<main>
-		<section id="home" class="landing-page anchor">
-			<svg class="elements element1" version="1.0" xmlns="http://www.w3.org/2000/svg" width="50px" height="50px"
+		<section id="home" class="landing-page">
+			<!--<svg class="elements element1" version="1.0" xmlns="http://www.w3.org/2000/svg" width="50px" height="50px"
 				viewBox="0 0 500.000000 500.000000" preserveAspectRatio="xMidYMid meet">
 
 				<g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
@@ -190,7 +190,7 @@ l49 -13 1535 1535 1536 1536 -13 51 c-6 28 -15 51 -19 51 -3 0 -712 -706
 					<path fill="#79cdc3" d="M4200 794 c-303 -303 -472 -479 -450 -469 52 26 245 160 325 226 101
 83 352 341 422 434 71 95 201 295 191 295 -2 0 -221 -219 -488 -486z" />
 				</g>
-			</svg>
+			</svg>-->
 			<h1>Bienvenue !</h1>
 			<h1>Je suis&nbsp;<strong>William Stephan</strong>
 			</h1>
@@ -211,11 +211,61 @@ l49 -13 1535 1535 1536 1536 -13 51 c-6 28 -15 51 -19 51 -3 0 -712 -706
 						L'informatique reste un domaine qui m’intéresse et dans lequel je recherche une alternance pour
 						renforcer mes compétences.
 					</p>
-					<a class="slideright" href="#">Télécharger mon CV</a>
+					<a class="download" href="#">Télécharger mon CV&nbsp;&nbsp;&nbsp;<i class="fas fa-download"></i></a>
 				</div>
+
 			</article>
 		</section>
-		<section id="portfolio"></section>
+
+		<section id="portfolio">
+			<h2>Portfolio</h2>
+			<article>
+				<a id="portfolio-item-1" class="portfolio-item" href="portfolio/ostinato.html">
+                    <div class="portfolio-content">
+                        <p class="portfolio-date">2020</p>
+                        <h3>Ostinato</h3>
+                        <ul class="portfolio-tags">
+                            <li>UI</li>
+                            <li>UX</li>
+                            <li>Intégration</li>
+                        </ul>
+                    </div>
+                </a>
+				<a id="portfolio-item-2" class="portfolio-item" href="portfolio/ostinato.html">
+                    <div class="portfolio-content">
+                        <p class="portfolio-date">2020</p>
+                        <h3>Ostinato</h3>
+                        <ul class="portfolio-tags">
+                            <li>UI</li>
+                            <li>UX</li>
+                            <li>Intégration</li>
+                        </ul>
+                    </div>
+                </a>
+				<a id="portfolio-item-3" class="portfolio-item" href="portfolio/ostinato.html">
+                    <div class="portfolio-content">
+                        <p class="portfolio-date">2020</p>
+                        <h3>Ostinato</h3>
+                        <ul class="portfolio-tags">
+                            <li>UI</li>
+                            <li>UX</li>
+                            <li>Intégration</li>
+                        </ul>
+                    </div>
+                </a>
+				<a id="portfolio-item-4" class="portfolio-item" href="portfolio/ostinato.html">
+                    <div class="portfolio-content">
+                        <p class="portfolio-date">2020</p>
+                        <h3>Ostinato</h3>
+                        <ul class="portfolio-tags">
+                            <li>UI</li>
+                            <li>UX</li>
+                            <li>Intégration</li>
+                        </ul>
+                    </div>
+                </a>
+			</article>
+		</section>
 		<section id="contact"></section>
 	</main>
 	<footer>
@@ -224,6 +274,7 @@ l49 -13 1535 1535 1536 1536 -13 51 c-6 28 -15 51 -19 51 -3 0 -712 -706
 	</footer>
 	<aside>
 		<div class="medias">
+
 			<a target="_blank" href="https://dribbble.com/" class="dribbble"><i class="fa fa-dribbble"
 					aria-hidden="true"></i></a>
 			<a target="_blank" href="https://www.instagram.com/will.stph" class="insta" target="_blank"><i
@@ -231,9 +282,9 @@ l49 -13 1535 1535 1536 1536 -13 51 c-6 28 -15 51 -19 51 -3 0 -712 -706
 			<a target="_blank" href="https://www.linkedin.com/in/william-stephan/" class="in"><i class="fa fa-linkedin"
 					aria-hidden="true"></i></a>
 		</div>
-		<a href="#" class="ToTheTop"><i class="fas text-white fa-chevron-up"></i></a>
+		<a href="#" class="ToTheTop"><i class="fas fa-chevron-up"></i></a>
 	</aside>
-	
+
 	<script>
 		/*const handleView = item => {
 			const linkEl = document.querySelector(`#link-${item}`);
@@ -267,6 +318,7 @@ l49 -13 1535 1535 1536 1536 -13 51 c-6 28 -15 51 -19 51 -3 0 -712 -706
 			handler: function () {
 				document.querySelector(".tab").style.left = "10px";
 				document.querySelector(".tab").style.background = "#79cdc3";
+				document.querySelector(".ToTheTop").style.background = "#79cdc3";
 			}, offset: -400
 		})
 		var profilStart = new Waypoint({
@@ -274,6 +326,7 @@ l49 -13 1535 1535 1536 1536 -13 51 c-6 28 -15 51 -19 51 -3 0 -712 -706
 			handler: function () {
 				document.querySelector(".tab").style.left = "130px";
 				document.querySelector(".tab").style.background = "#ceeb7f";
+				document.querySelector(".ToTheTop").style.background = "#ceeb7f";
 			}, offset: 300
 		})
 		var profilEnd = new Waypoint({
@@ -281,32 +334,36 @@ l49 -13 1535 1535 1536 1536 -13 51 c-6 28 -15 51 -19 51 -3 0 -712 -706
 			handler: function () {
 				document.querySelector(".tab").style.left = "130px";
 				document.querySelector(".tab").style.background = "#ceeb7f";
-			}, offset: 150
+				document.querySelector(".ToTheTop").style.background = "#ceeb7f";
+			}, offset: 600
 		})
 		var portfolioStart = new Waypoint({
 			element: document.getElementById('portfolio'),
 			handler: function () {
 				document.querySelector(".tab").style.left = "250px";
 				document.querySelector(".tab").style.background = "#fee266";
-			}
+				document.querySelector(".ToTheTop").style.background = "#fee266";
+			}, offset: 300
 		})
 		var portfolioEnd = new Waypoint({
 			element: document.getElementById('contact'),
 			handler: function () {
 				document.querySelector(".tab").style.left = "250px";
 				document.querySelector(".tab").style.background = "#fee266";
-			}, offset: 150
+				document.querySelector(".ToTheTop").style.background = "#fee266";
+			}, offset: 0
 		})
 		var contact = new Waypoint({
 			element: document.getElementById('contact'),
 			handler: function () {
 				document.querySelector(".tab").style.left = "370px";
 				document.querySelector(".tab").style.background = "#ff2674";
-			}, offset: 10
+				document.querySelector(".ToTheTop").style.background = "#ff2674";
+			}, offset: 0
 		})
 		var buttonTop = document.querySelector(".ToTheTop");
 		window.onscroll = () => {
-			this.scrollY > 300 ? buttonTop.classList.add("showBtn") : buttonTop.classList.remove("showBtn");//faire apparaitre le button pour revenir en haut de page
+			this.scrollY > 200 ? buttonTop.classList.add("showBtn") : buttonTop.classList.remove("showBtn");//faire apparaitre le button pour revenir en haut de page
 		}
 
 	</script>
