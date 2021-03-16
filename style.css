@@ -18,13 +18,15 @@ html {
   scroll-behavior: smooth;
   color: #000;
   font-family: 'Poppins', sans-serif;
+  max-width: 100%;
+    overflow-x: hidden;
 }
 
 body {
   min-height: 100vh;
-  background: url(images/Banniere.png) no-repeat;
+  /*background: url(images/Banniere.png) no-repeat;
   background-size: contain;
-  z-index: -3;
+  /*z-index: -3;*/
 }
 
 main {
@@ -106,7 +108,7 @@ nav>a, nav>a:visited {
   /* also add a translate effect */
   transform: translateY(100px);
   /* and a transition */
-  transition: all .5s ease
+  transition: all 0.5s cubic-bezier(0.65, -0.25, 0.25, 1.95);
 }
 
 .showBtn {
@@ -162,7 +164,7 @@ svg {
   top: 25%;
   left: 10%;
   width: 5%;
-  animation: circle2 40s linear infinite;
+  animation: circle2 100s linear infinite;
 }
 
 .element3 {
@@ -170,7 +172,7 @@ svg {
   left: 3%;
   width: 11%;
   rotate: -38deg;
-  animation: circle3 35s linear infinite;
+  animation: circle3 350s linear infinite;
 }
 
 .element4 {
@@ -178,7 +180,7 @@ svg {
   left: 24%;
   width: 12%;
   rotate: -43deg;
-  animation: circle4 60s linear infinite;
+  animation: circle4 380s linear infinite;
 }
 
 .element5 {
@@ -186,7 +188,58 @@ svg {
   left: 56%;
   width: 16%;
   rotate: -3deg;
-  animation: circle2 400s linear infinite;
+  animation: circle3 400s linear infinite;
+}
+
+.element6 {
+  top: -5%;
+  right: 7%;
+  width: 13%;
+  rotate: -3deg;
+  animation: circle1 350s linear infinite;
+}
+
+.element7 {
+  top: 18%;
+  right: -6%;
+  width: 12%;
+  rotate: -43deg;
+  animation: circle4 380s linear infinite;
+}
+
+.element8 {
+  top: 55%;
+  right: 5%;
+  width: 5%;
+  animation: circle1 80s linear infinite;
+}
+
+.element9 {
+  top: 75%;
+  right: -2%;
+  width: 13%;
+  animation: circle3 150s linear infinite;
+}
+
+.element10 {
+  top: 50%;
+  left: 0%;
+  width: 7%;
+  animation: circle3 150s linear infinite;
+}
+
+.element11 {
+  top: 75%;
+  left: 0%;
+  width: 11%;
+  animation: circle2 150s linear infinite;
+}
+
+.element12 {
+  top: 80%;
+  left: -3%;
+  width: 15%;
+  animation: circle3 150s linear infinite;
 }
 
 @keyframes circle1 {
@@ -203,7 +256,7 @@ svg {
     transform: rotate(0deg) translate(-20px) rotate(0deg);
   }
   to {
-    transform: rotate(360deg) translate(-40px) rotate(360deg);
+    transform: rotate(360deg) translate(-20px) rotate(360deg);
   }
 }
 
@@ -218,10 +271,10 @@ svg {
 
 @keyframes circle4 {
   from {
-    transform: rotate(360deg) translate(-50px) rotate(360deg);
+    transform: rotate(360deg) translate(-35px) rotate(360deg);
   }
   to {
-    transform: rotate(0deg) translate(-40px) rotate(0deg);
+    transform: rotate(0deg) translate(-35px) rotate(0deg);
   }
 }
 
