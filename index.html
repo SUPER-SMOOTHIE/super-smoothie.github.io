@@ -22,12 +22,13 @@
 			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
 			crossorigin="anonymous"></script>
 		<script src="https://unpkg.com/scrollreveal"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 
 		<script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
 
 		<script src="waypoints/lib/noframework.waypoints.min.js"></script>
 		<!-- Font Awesome JS -->
-
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
 		<script src="https://kit.fontawesome.com/ca48e96271.js" crossorigin="anonymous"></script>
 	</head>
 
@@ -44,10 +45,11 @@
 				</ul>
 			</nav>
 		</header>
-		<main>
-			<section id="home" class="landing-page">
-				<svg class="elements element1" version="1.0" xmlns="http://www.w3.org/2000/svg" width="50px"
-					height="50px" viewBox="0 0 500.000000 500.000000" preserveAspectRatio="xMidYMid meet">
+
+		<section id="home" class="landing-page">
+			<div id="scene">
+				<svg data-depth="0.1" class="elements element1" version="1.0" xmlns="http://www.w3.org/2000/svg"
+					width="50px" height="50px" viewBox="0 0 500.000000 500.000000" preserveAspectRatio="xMidYMid meet">
 
 					<g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)" fill="#000000"
 						stroke="none">
@@ -105,7 +107,17 @@ l49 -13 1535 1535 1536 1536 -13 51 c-6 28 -15 51 -19 51 -3 0 -712 -706
 83 352 341 422 434 71 95 201 295 191 295 -2 0 -221 -219 -488 -486z" />
 					</g>
 				</svg>
-				<svg class="elements element2" version="1.0" width="50px" height="50px"
+				<svg data-depth="0.3" class="elements element3" version="1.0" width="50px" height="50px"
+					viewBox="0 0 1280.000000 1108.000000">
+					<g transform="translate(0.000000,1108.000000) scale(0.100000,-0.100000)" fill="#000000"
+						stroke="none">
+						<path fill="#ceeb7f" d="M5898 10213 c-1018 -1764 -3562 -6168 -4709 -8153 l-1186 -2055 3198
+-3 c1760 -1 4638 -1 6398 0 l3199 3 -1095 1895 c-1272 2204 -1409 2440 -3226
+5585 -753 1304 -1527 2643 -1720 2978 -193 334 -354 607 -357 607 -3 0 -229
+-386 -502 -857z" />
+					</g>
+				</svg>
+				<svg data-depth="0.4" class="elements element2" version="1.0" width="50px" height="50px"
 					viewBox="0 0 1280.000000 1280.000000">
 					<g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" fill="#000000"
 						stroke="none">
@@ -118,18 +130,9 @@ l49 -13 1535 1535 1536 1536 -13 51 c-6 28 -15 51 -19 51 -3 0 -712 -706
 				-1895 946 -2985 1048 -153 15 -724 27 -850 19z" />
 					</g>
 				</svg>
-				<svg class="elements element3" version="1.0" width="50px" height="50px"
-					viewBox="0 0 1280.000000 1108.000000">
-					<g transform="translate(0.000000,1108.000000) scale(0.100000,-0.100000)" fill="#000000"
-						stroke="none">
-						<path fill="#ceeb7f" d="M5898 10213 c-1018 -1764 -3562 -6168 -4709 -8153 l-1186 -2055 3198
--3 c1760 -1 4638 -1 6398 0 l3199 3 -1095 1895 c-1272 2204 -1409 2440 -3226
-5585 -753 1304 -1527 2643 -1720 2978 -193 334 -354 607 -357 607 -3 0 -229
--386 -502 -857z" />
-					</g>
-				</svg>
-				<svg class="elements element4" version="1.0" xmlns="http://www.w3.org/2000/svg" width="50px"
-					height="50px" viewBox="0 0 1280.000000 1280.000000" preserveAspectRatio="xMidYMid meet">
+				<svg data-depth="0.3" class="elements element4" version="1.0" xmlns="http://www.w3.org/2000/svg"
+					width="50px" height="50px" viewBox="0 0 1280.000000 1280.000000"
+					preserveAspectRatio="xMidYMid meet">
 					<g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" stroke="none">
 						<path fill="#ff2674" d="M749 12047 c-19 -20 -19 -95 -19 -5658 0 -4139 3 -5640 11 -5645 6
 -4 2548 -7 5649 -7 4698 -1 5640 1 5654 12 15 12 16 471 16 5611 0 3078 -3
@@ -139,8 +142,8 @@ m10517 -866 c-12 -39 -17 -1584 -20 -5415 -3 -3985 -4 -4140 -22 -4153 -15
 1265 5 c696 3 2886 5 4868 6 3258 0 3602 -1 3598 -15z" />
 					</g>
 				</svg>
-				<svg class="elements element5" version="1.0" xmlns="http://www.w3.org/2000/svg" width="50px"
-					height="50px" viewBox="0 0 500.000000 500.000000" preserveAspectRatio="xMidYMid meet">
+				<svg data-depth="0.1" class="elements element5" version="1.0" xmlns="http://www.w3.org/2000/svg"
+					width="50px" height="50px" viewBox="0 0 500.000000 500.000000" preserveAspectRatio="xMidYMid meet">
 
 					<g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)" fill="#000000"
 						stroke="none">
@@ -198,7 +201,7 @@ l49 -13 1535 1535 1536 1536 -13 51 c-6 28 -15 51 -19 51 -3 0 -712 -706
 83 352 341 422 434 71 95 201 295 191 295 -2 0 -221 -219 -488 -486z" />
 					</g>
 				</svg>
-				<svg class="elements element6" version="1.0" width="50px" height="50px"
+				<svg data-depth="0.2" class="elements element6" version="1.0" width="50px" height="50px"
 					viewBox="0 0 1280.000000 1108.000000">
 					<g transform="translate(0.000000,1108.000000) scale(0.100000,-0.100000)" fill="#000000"
 						stroke="none">
@@ -208,8 +211,9 @@ l49 -13 1535 1535 1536 1536 -13 51 c-6 28 -15 51 -19 51 -3 0 -712 -706
 -386 -502 -857z" />
 					</g>
 				</svg>
-				<svg class="elements element7" version="1.0" xmlns="http://www.w3.org/2000/svg" width="50px"
-					height="50px" viewBox="0 0 1280.000000 1280.000000" preserveAspectRatio="xMidYMid meet">
+				<svg data-depth="0.3" class="elements element7" version="1.0" xmlns="http://www.w3.org/2000/svg"
+					width="50px" height="50px" viewBox="0 0 1280.000000 1280.000000"
+					preserveAspectRatio="xMidYMid meet">
 					<g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" stroke="none">
 						<path fill="#79cdc3" d="M749 12047 c-19 -20 -19 -95 -19 -5658 0 -4139 3 -5640 11 -5645 6
 -4 2548 -7 5649 -7 4698 -1 5640 1 5654 12 15 12 16 471 16 5611 0 3078 -3
@@ -219,7 +223,7 @@ m10517 -866 c-12 -39 -17 -1584 -20 -5415 -3 -3985 -4 -4140 -22 -4153 -15
 1265 5 c696 3 2886 5 4868 6 3258 0 3602 -1 3598 -15z" />
 					</g>
 				</svg>
-				<svg class="elements element8" version="1.0" width="50px" height="50px"
+				<svg data-depth="0.4" class="elements element8" version="1.0" width="50px" height="50px"
 					viewBox="0 0 1280.000000 1280.000000">
 					<g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" fill="#000000"
 						stroke="none">
@@ -232,7 +236,7 @@ m10517 -866 c-12 -39 -17 -1584 -20 -5415 -3 -3985 -4 -4140 -22 -4153 -15
 				-1895 946 -2985 1048 -153 15 -724 27 -850 19z" />
 					</g>
 				</svg>
-				<svg class="elements element9" version="1.0" width="50px" height="50px"
+				<svg data-depth="0.2" class="elements element9" version="1.0" width="50px" height="50px"
 					viewBox="0 0 1280.000000 1108.000000">
 					<g transform="translate(0.000000,1108.000000) scale(0.100000,-0.100000)" fill="#000000"
 						stroke="none">
@@ -242,7 +246,7 @@ m10517 -866 c-12 -39 -17 -1584 -20 -5415 -3 -3985 -4 -4140 -22 -4153 -15
 -386 -502 -857z" />
 					</g>
 				</svg>
-				<svg class="elements element10" version="1.0" width="50px" height="50px"
+				<svg data-depth="0.4" class="elements element10" version="1.0" width="50px" height="50px"
 					viewBox="0 0 1280.000000 1108.000000">
 					<g transform="translate(0.000000,1108.000000) scale(0.100000,-0.100000)" fill="#000000"
 						stroke="none">
@@ -252,7 +256,7 @@ m10517 -866 c-12 -39 -17 -1584 -20 -5415 -3 -3985 -4 -4140 -22 -4153 -15
 -386 -502 -857z" />
 					</g>
 				</svg>
-				<svg class="elements element12" version="1.0" width="50px" height="50px"
+				<svg data-depth="0.2" class="elements element12" version="1.0" width="50px" height="50px"
 					viewBox="0 0 1280.000000 1280.000000">
 					<g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" fill="#000000"
 						stroke="none">
@@ -265,8 +269,9 @@ m10517 -866 c-12 -39 -17 -1584 -20 -5415 -3 -3985 -4 -4140 -22 -4153 -15
 				-1895 946 -2985 1048 -153 15 -724 27 -850 19z" />
 					</g>
 				</svg>
-				<svg class="elements element11" version="1.0" xmlns="http://www.w3.org/2000/svg" width="50px"
-					height="50px" viewBox="0 0 1280.000000 1280.000000" preserveAspectRatio="xMidYMid meet">
+				<svg data-depth="0.3" class="elements element11" version="1.0" xmlns="http://www.w3.org/2000/svg"
+					width="50px" height="50px" viewBox="0 0 1280.000000 1280.000000"
+					preserveAspectRatio="xMidYMid meet">
 					<g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" stroke="none">
 						<path fill="#ceeb7f" d="M749 12047 c-19 -20 -19 -95 -19 -5658 0 -4139 3 -5640 11 -5645 6
 -4 2548 -7 5649 -7 4698 -1 5640 1 5654 12 15 12 16 471 16 5611 0 3078 -3
@@ -276,19 +281,20 @@ m10517 -866 c-12 -39 -17 -1584 -20 -5415 -3 -3985 -4 -4140 -22 -4153 -15
 1265 5 c696 3 2886 5 4868 6 3258 0 3602 -1 3598 -15z" />
 					</g>
 				</svg>
-				
+			</div>
+			<div class="banner-text">
 				<h1>Bienvenue !</h1>
 				<h1>Je suis&nbsp;<strong>William Stephan</strong>
 				</h1>
 				<p>Etudiant en Informatique</p>
-
-				</div>
-			</section>
+			</div>
+		</section>
+		<main>
 			<section id="profil">
 				<h2>A Propos de moi</h2>
 				<article>
 					<figure>
-						<img src="images/pdp.jpg" alt="Photo de William Stephan" title="William Stephan">
+						<img src="images/moi2.png" alt="Photo de William Stephan" title="William Stephan">
 					</figure>
 					<div>
 						<h3>William Stephan</h3>
@@ -348,33 +354,6 @@ m10517 -866 c-12 -39 -17 -1584 -20 -5415 -3 -3985 -4 -4140 -22 -4153 -15
 		</aside>
 
 		<script>
-			/*const handleView = item => {
-				const linkEl = document.querySelector(`#link-${item}`);
-	
-				let offsetHeight = .85 * (window.innerHeight)
-				inView.offset({
-					bottom: offsetHeight
-				});
-	
-				inView(`#${item}`)
-					.on("enter", () => {
-						if (linkEl == document.querySelector("#link-home")) {
-							l1();
-						}
-						else if (linkEl == document.querySelector("#link-profil")) {
-							l2();
-						}
-						else if (linkEl == document.querySelector("#link-portfolio")) {
-							l3();
-						}
-						else {
-							l4();
-						}
-					})
-					.on("exit", el => linkEl.classList.remove('active'))
-			};
-			["home", "profil", "portfolio", "contact"].forEach(handleView);
-	*/
 			ScrollReveal({ reset: true });
 			ScrollReveal().reveal('#profil', { delay: 100 });
 			var home = new Waypoint({
@@ -429,6 +408,8 @@ m10517 -866 c-12 -39 -17 -1584 -20 -5415 -3 -3985 -4 -4140 -22 -4153 -15
 			window.onscroll = () => {
 				this.scrollY > 200 ? buttonTop.classList.add("showBtn") : buttonTop.classList.remove("showBtn");//faire apparaitre le button pour revenir en haut de page
 			}
+			var scene = document.getElementById('scene');
+			var parallaxInstance = new Parallax(scene);
 
 		</script>
 	</body>
