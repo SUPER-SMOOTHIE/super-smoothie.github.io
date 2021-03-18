@@ -24,6 +24,8 @@ html {
   scrollbar-color: #79cdc3 #cfd1d8;
 }
 
+/*Page de chargement*/
+
 .loader-wrapper {
   width: 100%;
   height: 100%;
@@ -37,6 +39,8 @@ html {
   z-index: 200;
 }
 
+/*Bloquer le scroll au chargement*/
+
 .stop-scrolling {
   height: 100vh;
   overflow: hidden;
@@ -46,6 +50,7 @@ html, body {
   height: 100%;
 }
 
+/*Logo de chargement animé*/
 
 .loader {
   animation: rotate 2s infinite;
@@ -692,6 +697,7 @@ section {
 
 footer {
   padding: 25px 0;
+  border-top: 1px solid rgba(55, 56, 60, .1);
 }
 
 footer p {
