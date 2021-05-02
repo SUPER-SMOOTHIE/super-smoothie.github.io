@@ -178,6 +178,14 @@ nav ul a {
   outline: 0;
 }
 
+nav ul a:first-child{
+  margin-left: 0;
+}
+
+nav ul a:last-child{
+  margin-right: 0;
+}
+
 nav>a, nav>a:visited {
   /*William Stephan sur le header*/
   color: #000;
@@ -627,17 +635,17 @@ section {
 }
 
 #portfolio-item-2 {
-  background-image: url(images/ProjetLienSocial2.png);
+  background-image: url(images/will.png);
   margin-left: auto;
 }
 
 #portfolio-item-3 {
-  background-image: url(images/ProjetLienSocial2.png);
+  background-image: url(images/will.png);
   margin-left: auto;
 }
 
 #portfolio-item-4 {
-  background-image: url(images/ProjetLienSocial2.png);
+  background-image: url(images/will.png);
   margin-left: auto;
 }
 
