@@ -609,6 +609,22 @@ section {
   color: #4B4B4B;
 }
 
+.bg{
+  background: url(images/BanniereParcours.png) top center no-repeat scroll;
+}
+
+#parcours{
+  display: flex;
+  justify-content: center;
+  
+}
+
+#parcours article{
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+}
+
 #parcours h3{
   font-weight: 500;
   font-size: 40px;
@@ -616,19 +632,58 @@ section {
   line-height: 1.3em;
   padding-left: 10px;
   border-left: #ceeb7f 5px solid;
+  margin-bottom: 50px;
+  align-self: center;
 }
 
-#parcours p:first-of-type {
-  font-size: 20px;
+#parcours p:nth-of-type(odd) {
+  font-size: 30px;
+  line-height: 1.7;
+  font-weight: 500;
+  margin-top: 50px;
+}
+
+#parcours p:nth-of-type(even) {
+  font-size: 25px;
   line-height: 1.7;
 }
 
 #parcours a{
-
+  transition: 0.3s ease-in-out;
+  text-decoration: underline solid 3px #ceeb7f;
 }
 
 #parcours a:hover{
+  color: #ceeb7f;
+}
 
+#parcours ul{
+  padding: 10px;
+}
+
+#parcours li{
+  margin: 6px;
+  font-size: 20px;
+}
+
+#parcours li:nth-of-type(1):before{
+  content: "●   "; 
+  color: #79cdc3;
+}
+
+#parcours li:nth-of-type(2):before{
+  content: "●   "; 
+  color: #ceeb7f;
+}
+
+#parcours li:nth-of-type(3):before{
+  content: "●   "; 
+  color: #fee266;
+}
+
+#parcours li:nth-of-type(4):before{
+  content: "●   "; 
+  color: #ff2674;
 }
 
 .download {
@@ -793,6 +848,8 @@ footer a:hover {
 
 #contact article:last-of-type {
   margin-top: 80px;
+  display: flex;
+  flex-direction: column;
 }
 
 #contact article h4 {
@@ -803,6 +860,10 @@ footer a:hover {
   padding-left: 10px;
   border-left: #ff2674 5px solid;
   margin-bottom: 30px;
+}
+
+#contact article:last-of-type h4{
+  align-self: center;
 }
 
 #contact article p {
