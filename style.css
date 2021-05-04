@@ -6,6 +6,7 @@
   text-decoration: none;
   line-height: 1;
   list-style: none;
+  color: #2b2b2b;
 }
 
 *::selection {
@@ -168,27 +169,26 @@ nav ul {
 nav ul a {
   margin: 10px 10px;
   font-weight: 400;
-  width: 100px;
+  width: 120px;
   display: inline-block;
   text-align: center;
   position: relative;
-  color: #000;
+  color: #2b2b2b;
   font-size: 20px;
   text-decoration: none;
   outline: 0;
 }
 
-nav ul a:first-child{
+nav ul a:first-child {
   margin-left: 0;
 }
 
-nav ul a:last-child{
+nav ul a:last-child {
   margin-right: 0;
 }
 
 nav>a, nav>a:visited {
   /*William Stephan sur le header*/
-  color: #000;
   font-size: 20px;
   padding-bottom: 3px;
   border-bottom: 3px solid;
@@ -426,14 +426,14 @@ section {
 }
 
 .medias a {
-  color: #000;
+  color: #2b2b2b;
   margin: 5px 0;
   font-size: 25px;
   transition: all ease-in-out .15s;
 }
 
 .medias a:visited {
-  color: #000;
+  color: #2b2b2b;
 }
 
 .medias .dribbble:hover {
@@ -492,6 +492,28 @@ section {
   flex-direction: column;
 }
 
+.banner-text a{
+  position: absolute !important;
+  top: 80%;
+  animation: floating 2.5s ease-in-out infinite;
+}
+
+/*chevron down SVG*/
+.banner-text svg {
+  position: relative !important;
+  
+}
+
+@keyframes floating {
+  from {
+    top: 80%;
+  }
+  50%{
+    top:83%;
+  }
+  to {top: 80%;}
+}
+
 #home {
   display: flex;
   justify-content: center;
@@ -501,15 +523,16 @@ section {
 
 #home h1 {
   text-align: center;
-  font-weight: 200;
+  font-weight: 700;
+  font-size: 70px;
   margin-bottom: 30px;
+  letter-spacing: 1px;
 }
-
-#home h1 strong {
-  font-weight: 400;
-  border-bottom: #79cdc3 5px solid;
+#home span{
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 70px;
 }
-
 #home p {
   text-align: center;
   font-weight: 200;
@@ -517,7 +540,7 @@ section {
   font-size: 30px;
 }
 
-#profil, #contact, #portfolio {
+#profil, #contact, #portfolio, #parcours {
   margin: auto;
   margin-bottom: 150px;
   max-width: 1200px;
@@ -537,8 +560,8 @@ section {
   width: 350px;
   margin: 50px auto 60px auto;
   font-size: 40px;
-  font-weight: 500;
-  color: #000;
+  font-weight: 700;
+  color: #2b2b2b;
   padding-bottom: 8px;
   border-bottom: #ceeb7f 5px solid;
 }
@@ -564,8 +587,8 @@ section {
 
 #profil article div h3 {
   font-weight: 500;
-  font-size: 35px;
-  color: #000;
+  font-size: 40px;
+  color: #2b2b2b;
   line-height: 1.3em;
   padding-left: 10px;
   border-left: #ceeb7f 5px solid;
@@ -581,9 +604,31 @@ section {
 }
 
 #profil article div p {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.7;
   color: #4B4B4B;
+}
+
+#parcours h3{
+  font-weight: 500;
+  font-size: 40px;
+  color: #2b2b2b;
+  line-height: 1.3em;
+  padding-left: 10px;
+  border-left: #ceeb7f 5px solid;
+}
+
+#parcours p:first-of-type {
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+#parcours a{
+
+}
+
+#parcours a:hover{
+
 }
 
 .download {
@@ -601,7 +646,7 @@ section {
   font-family: inherit;
   transition: all 0.5s cubic-bezier(0.65, -0.25, 0.25, 1.95);
   font-weight: 900;
-  color: #000;
+  color: #2b2b2b;
   padding: 1.25rem 2rem;
   background: #ceeb7f;
   text-transform: uppercase;
@@ -616,8 +661,8 @@ section {
   width: 200px;
   margin: 50px auto 120px auto;
   font-size: 40px;
-  font-weight: 500;
-  color: #000;
+  font-weight: 700;
+  color: #2b2b2b;
   padding-bottom: 8px;
   border-bottom: #fee266 5px solid;
 }
@@ -695,15 +740,16 @@ section {
 #contact h2 {
   text-align: center;
   width: 200px;
-  margin: 50px auto 120px auto;
+  margin: 50px auto 100px auto;
   font-size: 40px;
-  font-weight: 500;
-  color: #000;
+  font-weight: 700;
+  color: #2b2b2b;
   padding-bottom: 8px;
   border-bottom: #ff2674 5px solid;
 }
 
 footer {
+  background-color: #fcfcfc;
   padding: 25px 0;
   border-top: 1px solid rgba(55, 56, 60, .1);
 }
@@ -712,29 +758,54 @@ footer p {
   text-align: center;
   margin-top: 25px;
   line-height: 1.5;
-  color: #D2D2D2;
+  color: #c0bfbf;
 }
 
-#contact article {
+footer a {
+  line-height: 1.5;
+  color: #c0bfbf;
+  transition: 0.3s ease-in-out ;
+}
+
+footer a:hover {
+  color: #6d6d6d;
+}
+
+#contact div {
+  padding-left: 70px;
+  -webkit-box-flex: 1.5;
+  -ms-flex: 1.5;
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact article:first-of-type {
+  display: flex;
+  justify-content: space-between;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  flex-direction: column;
+}
+
+#contact article:last-of-type {
+  margin-top: 80px;
 }
 
 #contact article h4 {
   font-weight: 500;
-  font-size: 35px;
-  color: #000;
+  font-size: 40px;
+  color: #2b2b2b;
   line-height: 1.3em;
   padding-left: 10px;
   border-left: #ff2674 5px solid;
+  margin-bottom: 30px;
 }
 
-#contact article h3 {
+#contact article p {
   margin-top: 30px;
   font-weight: 300;
   font-size: 28px;
@@ -743,11 +814,82 @@ footer p {
   margin-bottom: 30px;
 }
 
+#contact address{
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact address p{
+  margin-bottom: 5px;
+}
+
 #contact address a {
-  font-weight: 300;
+  font-weight: 700;
+  font-size: 28px;
+  color: #37383c;
+  line-height: 1.3em;
+  margin-bottom: 30px;
+  transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  border-bottom: #79cdc300 solid 5px;
+  align-self: center;
+}
+
+#contact address a:hover {
+  font-weight: 700;
   font-size: 28px;
   color: #37383c;
   line-height: 1.3em;
   margin-bottom: 30px;
   font-style: normal;
+  letter-spacing: 2px;
+  border-bottom: #79cdc3 solid 5px;
+}
+
+#contact ul {
+  position: relative;
+  display: inline-flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#contact ul a {
+  margin: 10px 10px;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  outline: 0;
+}
+
+#in {
+  color: #79cdc3;
+  font-size: 80px;
+  font-weight: 700;
+  transition: 0.5s ease-in-out;
+}
+
+#dd {
+  color: #ceeb7f;
+  font-size: 80px;
+  font-weight: 700;
+  transition: 0.5s ease-in-out;
+}
+
+#git {
+  color: #fee266;
+  font-size: 80px;
+  font-weight: 700;
+  transition: 0.3s ease-in-out;
+}
+
+#in:hover {
+  color: #65aca3;
+}
+
+#dd:hover {
+  color: #a7be67;
+}
+
+#git:hover {
+  color: #cab556;
 }
