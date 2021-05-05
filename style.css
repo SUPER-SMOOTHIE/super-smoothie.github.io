@@ -720,27 +720,39 @@ SECTION COMPETENCE
   font-weight: 400;
 }
 
-#competences .logiciel{
-display: flex;
-flex-wrap: wrap;
+#competences a>p {
+  margin-top: 15px;
 }
 
-#competences .logiciel a{
+#competences .container-skill{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+#competences .langage{
+  flex-basis: 150%;
+}
+
+#competences .langage p,#competences .logiciel p{
+  margin-bottom: 30px;
+}
+
+#competences .container-skill a{
   font-size: 20px;
   display: block;
   text-align: center;
-  margin-top: 10px;
   transition: all .3s ease-in-out;
-  text-decoration: underline rgba(255, 255, 255, 0) 2px;
+  text-decoration: underline rgba(255, 255, 255, 0) 3px;
 }
 
-#competences .logiciel a:hover{
-  text-decoration: underline #ceeb7f 2px;
+#competences .container-skill a:hover{
+  text-decoration: underline #ceeb7f 3px;
 }
 
 #competences .icon{
   width: 100px;
-  margin: 20px;
+  margin: 30px;
 }
 
 #competences .icon img{
@@ -748,6 +760,11 @@ flex-wrap: wrap;
   display: block;
   width: 80px;
   height: 80px;
+  transition: all .3s ease-in-out;
+}
+
+#competences .icon img:hover{
+  transform: scale(1.1);
 }
 
 .download {
@@ -803,17 +820,17 @@ SECTION PORTFOLIO
 }
 
 #portfolio-item-2 {
-  background-image: url(images/will.png);
+  background-image: url(images/ProjetLienSocial2.png);
   margin-left: auto;
 }
 
 #portfolio-item-3 {
-  background-image: url(images/will.png);
+  background-image: url(images/ProjetLienSocial2.png);
   margin-left: auto;
 }
 
 #portfolio-item-4 {
-  background-image: url(images/will.png);
+  background-image: url(images/ProjetLienSocial2.png);
   margin-left: auto;
 }
 
