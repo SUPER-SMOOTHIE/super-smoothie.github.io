@@ -358,51 +358,51 @@ SECTION projet
   margin-top: 100px;
 }
 
-#projet1 article h2{
+.projet:nth-of-type(n) article h2{
   border-bottom: #79cdc3 5px solid;
 }
 
-#projet1 article h3{
+.projet:nth-of-type(n) article h3{
   border-left: #79cdc3 5px solid;
 }
 
-#projet1 a{
+.projet:nth-of-type(n) a{
   background-color: #79cdc3 ;
 }
 
-#projet2 article h2{
+.projet:nth-of-type(4n-2) article h2{
   border-bottom: #97bf0d 5px solid;
 }
 
-#projet2 article h3{
+.projet:nth-of-type(4n-2) article h3{
   border-left: #97bf0d 5px solid;
 }
 
-#projet2 a{
+.projet:nth-of-type(4n-2) a{
   background-color: #97bf0d ;
 }
 
-#projet3 article h2{
+.projet:nth-of-type(4n-1) article h2{
   border-bottom: #fee266 5px solid;
 }
 
-#projet3 article h3{
+.projet:nth-of-type(4n-1) article h3{
   border-left: #fee266 5px solid;
 }
 
-#projet3 a{
+.projet:nth-of-type(4n-1) a{
   background-color: #fee266 ;
 }
 
-#projet4 article h2{
+.projet:nth-of-type(4n) article h2{
   border-bottom: #ff2674 5px solid;
 }
 
-#projet4 article h3{
+.projet:nth-of-type(4n) article h3{
   border-left: #ff2674 5px solid;
 }
 
-#projet4 a{
+.projet:nth-of-type(4n) a{
   background-color: #ff2674 ;
 }
 
@@ -484,7 +484,6 @@ SECTION projet
 
 .projet-banner .icon {
   font-size: 20px;
-  
   display: block;
   text-align: center;
   transition: all .3s ease-in-out;
@@ -644,15 +643,39 @@ footer a:hover {
   .tab {
     left: 1.4%;
   }
+  .projet-banner{
+    flex-wrap: wrap;
+  }
   .projet article h3 {
     font-size: 35px;
   }
-  
+  .projet figure {
+    height: auto;
+    width: 80%;
+  }
   .projet article h4 {
-    font-size: 20px;
+    font-size:20px;
+    margin-bottom: 20px;
   }
   .projet article div p {
     font-size: 15px;
     line-height: 20px;
+  }
+  .projet-banner > ul{
+    padding-top: 0;
+  }
+  .projet-banner .icon>img{
+    width: 50px;
+  }
+  .icon {
+    margin-top: 0 !important;
+  }
+  .ToTheTop {
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    padding: 5px 5px;
   }
 }
