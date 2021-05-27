@@ -842,6 +842,12 @@ SECTION PORTFOLIO
   transition: .25s, opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.3s !important;
 }
 
+#portfolio-item-5 {
+  background-image: url(images/Pacman.jpg);
+  margin-left: auto;
+  transition: .25s, opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.3s !important;
+}
+
 #portfolio .portfolio-item {
   position: relative;
   width: calc(50% - 15px);
