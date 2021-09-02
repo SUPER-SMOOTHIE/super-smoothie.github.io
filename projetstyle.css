@@ -309,7 +309,7 @@ MOUSE PARALLAX
 SECTION projet
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-.projet{
+.projet {
   margin: auto;
   margin-bottom: 150px;
   max-width: 1200px;
@@ -319,6 +319,7 @@ SECTION projet
   height: auto;
   width: 90%;
 }
+
 .projet img {
   width: 100%;
   height: auto;
@@ -354,74 +355,71 @@ SECTION projet
   margin-bottom: 30px;
 }
 
-#projet1{
+#projet1 {
   margin-top: 100px;
 }
 
-.projet:nth-of-type(n) article h2{
+.projet:nth-of-type(n) article h2 {
   border-bottom: #79cdc3 5px solid;
 }
 
-.projet:nth-of-type(n) article h3{
+.projet:nth-of-type(n) article h3 {
   border-left: #79cdc3 5px solid;
 }
 
-.projet:nth-of-type(n) a{
-  background-color: #79cdc3 ;
+.projet:nth-of-type(n) a {
+  background-color: #79cdc3;
 }
 
-.projet:nth-of-type(4n-2) article h2{
+.projet:nth-of-type(4n-2) article h2 {
   border-bottom: #97bf0d 5px solid;
 }
 
-.projet:nth-of-type(4n-2) article h3{
+.projet:nth-of-type(4n-2) article h3 {
   border-left: #97bf0d 5px solid;
 }
 
-.projet:nth-of-type(4n-2) a{
-  background-color: #97bf0d ;
+.projet:nth-of-type(4n-2) a {
+  background-color: #97bf0d;
 }
 
-.projet:nth-of-type(4n-1) article h2{
+.projet:nth-of-type(4n-1) article h2 {
   border-bottom: #fee266 5px solid;
 }
 
-.projet:nth-of-type(4n-1) article h3{
+.projet:nth-of-type(4n-1) article h3 {
   border-left: #fee266 5px solid;
 }
 
-.projet:nth-of-type(4n-1) a{
-  background-color: #fee266 ;
+.projet:nth-of-type(4n-1) a {
+  background-color: #fee266;
 }
 
-.projet:nth-of-type(4n) article h2{
+.projet:nth-of-type(4n) article h2 {
   border-bottom: #ff2674 5px solid;
 }
 
-.projet:nth-of-type(4n) article h3{
+.projet:nth-of-type(4n) article h3 {
   border-left: #ff2674 5px solid;
 }
 
-.projet:nth-of-type(4n) a{
-  background-color: #ff2674 ;
+.projet:nth-of-type(4n) a {
+  background-color: #ff2674;
 }
 
-
-
-
-.projet article div{
+.projet article div {
   width: 80%;
 }
 
 @keyframes floating {
   from {
-    top:0;
+    top: 0;
   }
   50% {
-    top:5%;
+    top: 5%;
   }
   to {
-    top:0;
+    top: 0;
   }
 }
 
@@ -462,21 +460,21 @@ SECTION projet
   margin-top: 30px;
 }
 
-.projet article div a:hover{
+.projet article div a:hover {
   transform: scale(1.1);
 }
 
-.projet-banner{
+.projet-banner {
   display: flex;
   justify-content: center;
   width: 100% !important;
 }
 
-.projet-title{
+.projet-title {
   width: 100% !important;
 }
 
-.projet-banner > ul{
+.projet-banner>ul {
   display: inline-flex;
   flex-wrap: nowrap;
   padding-top: 60px;
@@ -490,16 +488,70 @@ SECTION projet
   background-color: white !important;
 }
 
-.projet-banner .icon>img{
+.projet-banner .icon>img {
   box-shadow: none !important;
   width: 50px;
+}
+
+.blur {
+  z-index: 500;
+  display: none;
+  padding-top: 10px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8)
+}
+
+.modal {
+  display: flex;
+  position: absolute;
+  width: 70vw;
+  height: 85vh;
+  top: 50%;
+  left: 50%;
+  justify-content: center;
+  align-content: center;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+.modal div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.modal i {
+  position: absolute;
+  right: 1%;
+  top:1%;
+  font-size: 20px;
+}
+
+.modal figure {
+  width: 45%;
+  margin: 5px;
+  height: auto;
+}
+
+.modal figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 /*///////////////////////
 PROJET ASIDE
 //////////////////////*/
 
-aside.projet-liste{
+aside.projet-liste {
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -507,10 +559,9 @@ aside.projet-liste{
   top: 50%;
   padding: 30px;
   transform: translate(0%, -50%);
-
 }
 
-aside.projet-liste ul li a{
+aside.projet-liste ul li a {
   font-size: 20px;
   text-align: center;
   width: 50px;
@@ -524,25 +575,25 @@ aside.projet-liste ul li a{
   transition: .3s ease-in-out;
 }
 
-aside.projet-liste ul li:nth-of-type(n) a:hover{
+aside.projet-liste ul li:nth-of-type(n) a:hover {
   border: 2px solid #79cdc3;
   background-color: #79cdc3;
   color: white;
 }
 
-aside.projet-liste ul li:nth-of-type(4n-2) a:hover{
+aside.projet-liste ul li:nth-of-type(4n-2) a:hover {
   border: 2px solid #97bf0d;
   background-color: #97bf0d;
   color: white;
 }
 
-aside.projet-liste ul li:nth-of-type(4n-1) a:hover{
+aside.projet-liste ul li:nth-of-type(4n-1) a:hover {
   border: 2px solid #fee266;
   background-color: #fee266;
   color: white;
 }
 
-aside.projet-liste ul li:nth-of-type(4n) a:hover{
+aside.projet-liste ul li:nth-of-type(4n) a:hover {
   border: 2px solid #ff2674;
   background-color: #ff2674;
   color: white;
@@ -575,17 +626,15 @@ footer a:hover {
   color: #6d6d6d;
 }
 
-
 @media all and (max-width: 1300px) {
   #projet figure {
     width: 300px;
     margin-right: 50px;
   }
-  aside.projet-liste{
+  aside.projet-liste {
     padding-left: 20px;
   }
-  
-  aside.projet-liste ul li a{
+  aside.projet-liste ul li a {
     font-size: 20px;
     width: 40px;
     height: 40px;
@@ -593,9 +642,7 @@ footer a:hover {
   }
 }
 
-@media all and (max-width: 1220px) {
-  
-}
+@media all and (max-width: 1220px) {}
 
 @media all and (max-width: 1000px) {
   header {
@@ -630,11 +677,10 @@ footer a:hover {
     width: 5em;
     font-weight: 500;
   }
-  aside.projet-liste{
+  aside.projet-liste {
     padding-left: 5px;
   }
-  
-  aside.projet-liste ul li a{
+  aside.projet-liste ul li a {
     font-size: 15px;
     width: 28px;
     height: 28px;
@@ -643,7 +689,7 @@ footer a:hover {
   .tab {
     left: 1.4%;
   }
-  .projet-banner{
+  .projet-banner {
     flex-wrap: wrap;
   }
   .projet article h3 {
@@ -654,17 +700,17 @@ footer a:hover {
     width: 80%;
   }
   .projet article h4 {
-    font-size:20px;
+    font-size: 20px;
     margin-bottom: 20px;
   }
   .projet article div p {
     font-size: 15px;
     line-height: 20px;
   }
-  .projet-banner > ul{
+  .projet-banner>ul {
     padding-top: 0;
   }
-  .projet-banner .icon>img{
+  .projet-banner .icon>img {
     width: 50px;
   }
   .icon {

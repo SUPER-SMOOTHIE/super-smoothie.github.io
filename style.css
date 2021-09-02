@@ -639,7 +639,7 @@ SECTION PARCOURS
 //////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .bg {
-  background: url(images/BanniereParcours.png) no-repeat;
+  background: url(images/BanniereParcours.webp) no-repeat;
   background-size: 100%;
 }
 
@@ -821,29 +821,29 @@ SECTION PORTFOLIO
 }
 
 #portfolio-item-1 {
-  background-image: url(images/Domotique.jpg);
+  background-image: url(images/Domotique.webp);
   transition: .25s, opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.1s !important;
 }
 
 #portfolio-item-2 {
-  background-image: url(images/Orion.png);
+  background-image: url(images/Orion.webp);
   margin-left: auto;
   transition: .25s, opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.2s !important;
 }
 
 #portfolio-item-3 {
-  background-image: url(images/Robotique.png);
+  background-image: url(images/Robotique.webp);
   transition: .25s, opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.3s !important;
 }
 
 #portfolio-item-4 {
-  background-image: url(images/possessed.jpg);
+  background-image: url(images/possessed.webp);
   margin-left: auto;
   transition: .25s, opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.3s !important;
 }
 
 #portfolio-item-5 {
-  background-image: url(images/Pacman.jpg);
+  background-image: url(images/Pacman.webp);
   margin-left: auto;
   transition: .25s, opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.3s !important;
 }
